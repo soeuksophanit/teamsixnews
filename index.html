@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap Link CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- ------------------ -->
+
+    <!--------------- My CSS ---------------------->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/notify.css" />
+    <!--------------- My CSS ---------------------->
+
+    <!-- Swiper CSS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- ----------- -->
+
+    <!-- AOS CSS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ----------- -->
+
+    <!-- font-awesome  -->
+    <script
+      src="https://kit.fontawesome.com/e11b6ccc4b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- --------------  -->
+
+    <title>ព័ត៌មាន - ក្រុមទី៦</title>
+  </head>
+  <body>
+    <!-- ⬇ Code Here ⬇-->
+
+    <!-- NavBar -->
+
+    <header class="navbar-wrap">
+      <a href="index.html" class="logo">ក្រុមទី៦</a>
+      <nav class="nav">
+        <ul class="nav-items">
+          <li class="nav-link active">
+            <a href="index.html">ទំព័រដើម</a>
+          </li>
+          <li class="nav-link">
+            <a href="#hot-news">ព័ត៌មានថ្មីៗ</a>
+          </li>
+          <li class="nav-link">
+            <a href="#local-news-wrapper">ព័ត៌មានជាតិ</a>
+          </li>
+          <li class="nav-link">
+            <a href="#international-news">ព័ត៌មានអន្តរជាតិ</a>
+          </li>
+          <li class="nav-link other-news">
+            <a href="more-news-categories.html">ព័ត៌មានផ្សេងៗ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="tools">
+        <input type="text" class="input" placeholder="ស្វែងរកបន្ថែម...." />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="search"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+          />
+        </svg>
+        <div class="dark-and-light">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="light-mode-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="dark-mode-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+            />
+          </svg>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="hamburger"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="close-svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+    </header>
+
+    <!-- ------ -->
+
+    <!-- Hero Section  -->
+
+    <section id="hero">
+      <div class="hero-des">
+        <h1 class="hero-title">
+          គេហទំព័រ បណ្ដុំព័ត៌មានដ៏សម្បូរបែប នៅក្នុងប្រទេស នឹង ក្រៅប្រទេស
+        </h1>
+        <p class="hero-p">
+          ប្រមូលផ្ដុំដោយ ព័ត៌មានទូទៅថ្មីៗ ដែលមានប្រភព ចុៈផ្សាយរាយការណ៍
+          ច្បាស់លាស់ ទាំងនៅក្នុងប្រទេស នឹង ក្រៅប្រទេស
+          រួមទាំងជីវិតរស់នៅប្រចាំថ្ងៃ ៕
+        </p>
+        <a href="#hot-news" class="hero-btn">បន្តអាន</a>
+      </div>
+    </section>
+
+    <!-- ------------- -->
+
+    <!-- Section Hot News  -->
+
+    <section
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+      id="hot-news"
+      class="hot-news"
+    >
+      <!-- Title News  -->
+      <div class="wrapper-title-category">
+        <h4 class="title-news-category">ព័ត៌មានថ្មីៗ ប្រចាំថ្ងៃ</h4>
+        <a href="#" class="view-more">មើលបន្ថែម</a>
+      </div>
+      <!-- ---------------  -->
+
+      <!-- Wrapper All News  -->
+      <div class="swiper mySwiper swiper1">
+        <div class="swiper-wrapper">
+          <!-- 1 box content  -->
+          <div class="swiper-slide">
+            <div class="news-content">
+              <img
+                src="imgs/hot-news-img/hn-pic5.JPG"
+                alt=""
+                class="img-news"
+              />
+              <div class="news-detail">
+                <img src="imgs/nith.jpeg" alt="" class="author-pic" />
+                <p class="date">01 - October - 2022</p>
+                <a href="demo-test-page.html" class="link-1-demo">
+                  <h2 class="title-news">
+                    សម្តេចតេជោ ហ៊ុន សែន៖ ខ្មែរ និងខ្មែរ
+                    ជាតួអង្គសំខាន់បំផុតសំរាប់កិច្ចព្រមព្រៀងសន្តិភាពទីក្រុងប៉ារីស
+                    ២៣ តុលា
+                  </h2>
+                </a>
+                <div class="views">
+                  <p class="amount-view">100 views</p>
+                  <span class="dots"></span>
+                  <p class="time-of-read">1 min read</p>
+                </div>
+                <div class="read-more">
+                  <p class="read">បន្តការអានអត្ថបទ</p>
+                  <span class="icons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 1 box content  -->
+          <div class="swiper-slide">
+            <div class="news-content">
+              <img
+                src="imgs/hot-news-img/hn-pic2.JPG"
+                alt=""
+                class="img-news"
+              />
+              <div class="news-detail">
+                <img
+                  src="imgs/authors-img/dom.jpeg"
+                  alt=""
+                  class="author-pic"
+                />
+                <p class="date">01 - October - 2022</p>
+                <a href="demo-test-page.html" class="link-1-demo">
+                  <h2 class="title-news">
+                    ស្ពាន និងផ្លូវជាច្រើនកន្លែង
+                    នៅក្នុងស្រុកចំនួន៩ក្នុងខេត្ដសៀមរាប រងការខូចខាតដោយទឹកជំនន់
+                  </h2>
+                </a>
+                <div class="views">
+                  <p class="amount-view">100 views</p>
+                  <span class="dots"></span>
+                  <p class="time-of-read">1 min read</p>
+                </div>
+                <div class="read-more">
+                  <p class="read">បន្តការអានអត្ថបទ</p>
+                  <span class="icons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 1 box content  -->
+          <div class="swiper-slide">
+            <div class="news-content">
+              <img
+                src="imgs/hot-news-img/hn-pic3.JPG"
+                alt=""
+                class="img-news"
+              />
+              <div class="news-detail">
+                <img
+                  src="imgs/authors-img/seth.jpeg"
+                  alt=""
+                  class="author-pic"
+                />
+                <p class="date">01 - October - 2022</p>
+                <a href="demo-test-page.html" class="link-1-demo">
+                  <h2 class="title-news">
+                    រយៈពេល១០ឆ្នាំចុងក្រោយ​
+                    ប្រភេទសត្វព្រៃក្រចកជើងចំពាមសំខាន់មួយចំនួន​
+                    បាត់បង់ច្រើននៅតំបន់ទេសភាពភាគខាងកើតកម្ពុជា
+                  </h2>
+                </a>
+                <div class="views">
+                  <p class="amount-view">100 views</p>
+                  <span class="dots"></span>
+                  <p class="time-of-read">1 min read</p>
+                </div>
+                <div class="read-more">
+                  <p class="read">បន្តការអានអត្ថបទ</p>
+                  <span class="icons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 1 box content  -->
+          <div class="swiper-slide">
+            <div class="news-content">
+              <img
+                src="imgs/hot-news-img/hn-pic4.JPG"
+                alt=""
+                class="img-news"
+              />
+              <div class="news-detail">
+                <img
+                  src="imgs/authors-img/lim.jpeg"
+                  alt=""
+                  class="author-pic"
+                />
+                <p class="date">01 - October - 2022</p>
+                <a href="demo-test-page.html" class="link-1-demo">
+                  <h2 class="title-news">
+                    អាជ្ញាធរខេត្តកំពង់ស្ពឺ ព្រួយបារម្ភពីការខូចខាត
+                    និងប៉ះពាល់ដំណាំស្រូវ ខណៈគ្មានភ្លៀងធ្លាក់
+                  </h2>
+                </a>
+                <div class="views">
+                  <p class="amount-view">100 views</p>
+                  <span class="dots"></span>
+                  <p class="time-of-read">1 min read</p>
+                </div>
+                <div class="read-more">
+                  <p class="read">បន្តការអានអត្ថបទ</p>
+                  <span class="icons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- -------------------  -->
+        </div>
+        <div class="swiper-pagination paginations"></div>
+        <!-- ----------------  -->
+      </div>
+      <!-- ------------------------ -->
+    </section>
+
+    <!-- ------------- -->
+
+    <!-- Section Local News  -->
+
+    <section
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+      class="local-news-wrapper"
+      id="local-news-wrapper"
+    >
+      <!-- Title News  -->
+      <div class="wrapper-title-category">
+        <h4 class="title-news-category">ព័ត៌មានជាតិ</h4>
+        <a href="#" class="view-more">មើលបន្ថែម</a>
+      </div>
+      <!-- ---------------  -->
+
+      <section class="swiper mySwiper swiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="news-content">
+              <img
+                src="imgs/local-news-img/lc-pic1.JPG"
+                alt=""
+                class="img-news"
+              />
+              <div class="news-detail">
+                <img
+                  src="imgs/authors-img/dom.jpeg"
+                  alt=""
+                  class="author-pic"
+                />
+                <p class="date">01 - October - 2022</p>
+                <a href="demo-test-page.html" class="link-1-demo">
+                  <h2 class="title-news">
+                    ក្រោយភ្លៀងធ្លាក់មួយមេកាលពីយប់មិញ​ បណ្តាលឱ្យលិចផ្លូវជាតិលេខ៦
+                    ត្រង់គីឡូម៉ែត្រលេខ១៤៦-១៤៧ ក្នុងខេត្តកំពង់ធំ
+                  </h2>
+                </a>
+                <div class="views">
+                  <p class="amount-view">100 views</p>
+                  <span class="dots"></span>
+                  <p class="time-of-read">1 min read</p>
+                </div>
+                <div class="read-more">
+                  <p class="read">បន្តការអានអត្ថបទ</p>
+                  <span class="icons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-content">
+              <img
+                src="imgs/local-news-img/lc-pic2.JPG"
+                alt=""
+                class="img-news"
+              />
+              <div class="news-detail">
+                <img
+                  src="imgs/authors-img/seth.jpeg"
+                  alt=""
+                  class="author-pic"
+                />
+                <p class="date">01 - October - 2022</p>
+                <a href="demo-test-page.html" class="link-1-demo">
+                  <h2 class="title-news">
+                    សម្តេចតេជោ ហ៊ុន សែន ណែនាំឲ្យរដ្ឋមន្រ្តីកសិកម្ម​
+                    ស្រាវជ្រាវពូជស្រូវដែលអាចផ្គត់ផ្គង់នៅនឹងកន្លែង
+                    និងដាំត្រូវនឹងដី
+                  </h2>
+                </a>
+                <div class="views">
+                  <p class="amount-view">100 views</p>
+                  <span class="dots"></span>
+                  <p class="time-of-read">1 min read</p>
+                </div>
+                <div class="read-more">
+                  <p class="read">បន្តការអានអត្ថបទ</p>
+                  <span class="icons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-content">
+              <img
+                src="imgs/local-news-img/lc-pic3.JPG"
+                alt=""
+                class="img-news"
+              />
+              <div class="news-detail">
+                <img
+                  src="imgs/authors-img/lim.jpeg"
+                  alt=""
+                  class="author-pic"
+                />
+                <p class="date">01 - October - 2022</p>
+                <a href="demo-test-page.html" class="link-1-demo">
+                  <h2 class="title-news">
+                    រដ្ឋបាលខេត្តកំពង់ធំ បន្តចែកជូនប្រជាពលរដ្ឋ
+                    ដែលមានជីវភាពខ្វះខាត ៣៥០គ្រួសារ នៅស្រុកតាំងគោក
+                  </h2>
+                </a>
+                <div class="views">
+                  <p class="amount-view">100 views</p>
+                  <span class="dots"></span>
+                  <p class="time-of-read">1 min read</p>
+                </div>
+                <div class="read-more">
+                  <p class="read">បន្តការអានអត្ថបទ</p>
+                  <span class="icons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-content">
+              <img
+                src="imgs/local-news-img/lc-pic4.JPG"
+                alt=""
+                class="img-news"
+              />
+              <div class="news-detail">
+                <img src="imgs/nith.jpeg" alt="" class="author-pic" />
+                <p class="date">01 - October - 2022</p>
+                <a href="demo-test-page.html" class="link-1-demo">
+                  <h2 class="title-news">
+                    សម្តេចតេជោ ហ៊ុន សែន ផ្ញើសារអបអរសាទរជូន លោក ស៊ី ជីនពីង
+                    ដែលជាប់ឆ្នោតជាអគ្គលេខាធិការគណបក្សកុម្មុយនីស្តចិនជាថ្មី
+                  </h2>
+                </a>
+                <div class="views">
+                  <p class="amount-view">100 views</p>
+                  <span class="dots"></span>
+                  <p class="time-of-read">1 min read</p>
+                </div>
+                <div class="read-more">
+                  <p class="read">បន្តការអានអត្ថបទ</p>
+                  <span class="icons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination paginations p3"></div>
+      </section>
+    </section>
+
+    <!-- ------------- -->
+
+    <!-- international News  -->
+    <section
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+      id="international-news"
+      class="international-news"
+    >
+      <!-- Title News  -->
+      <div class="wrapper-title-category">
+        <h4 class="title-news-category">ព័ត៌មានអន្តរជាតិ</h4>
+        <a href="#" class="view-more">មើលបន្ថែម</a>
+      </div>
+      <!-- ---------------  -->
+
+      <!-- Wrapper All News  -->
+      <div class="swiper mySwiper swiper3">
+        <div class="swiper-wrapper">
+          <!-- 1 box content  -->
+          <div class="swiper-slide">
+            <div class="news-content">
+              <img
+                src="imgs/int-news-img/in-pic1.PNG"
+                alt=""
+                class="img-news"
+              />
+              <div class="news-detail">
+                <img
+                  src="imgs/authors-img/seth.jpeg"
+                  alt=""
+                  class="author-pic"
+                />
+                <p class="date">01 - October - 2022</p>
+                <a href="demo-test-page.html" class="link-1-demo">
+                  <h2 class="title-news">
+                    លោកស៊ីជីនពីង
+                    ត្រូវបានគេជ្រើសរើសលោកឱ្យបន្តអំណាចសម្រាប់អាណត្តិទី៣ បន្ថែមទៀត
+                  </h2>
+                </a>
+                <div class="views">
+                  <p class="amount-view">100 views</p>
+                  <span class="dots"></span>
+                  <p class="time-of-read">1 min read</p>
+                </div>
+                <div class="read-more">
+                  <p class="read">បន្តការអានអត្ថបទ</p>
+                  <span class="icons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 1 box content  -->
+          <div class="swiper-slide">
+            <div class="news-content">
+              <img
+                src="imgs/int-news-img/in-pic2.PNG"
+                alt=""
+                class="img-news"
+              />
+              <div class="news-detail">
+                <img
+                  src="imgs/authors-img/lim.jpeg"
+                  alt=""
+                  class="author-pic"
+                />
+                <p class="date">01 - October - 2022</p>
+                <a href="demo-test-page.html" class="link-1-demo">
+                  <h2 class="title-news">
+                    អាឡឺម៉ង់
+                    និងបណ្តាប្រទេសផ្សេងៗក្នុងសហគមន៍អឺរ៉ុបយល់ព្រមគាំទ្រក្នុងដំណើរឆ្ពោះទៅរកការកាត់បន្ថយតម្លៃឧស្ម័ន
+                    អំឡុងអឺរ៉ុបកំពុងជួបវិបត្តិថាមពល
+                  </h2>
+                </a>
+                <div class="views">
+                  <p class="amount-view">100 views</p>
+                  <span class="dots"></span>
+                  <p class="time-of-read">1 min read</p>
+                </div>
+                <div class="read-more">
+                  <p class="read">បន្តការអានអត្ថបទ</p>
+                  <span class="icons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 1 box content  -->
+          <div class="swiper-slide">
+            <div class="news-content">
+              <img
+                src="imgs/int-news-img/in-pic3.PNG"
+                alt=""
+                class="img-news"
+              />
+              <div class="news-detail">
+                <img
+                  src="imgs/authors-img/dom.jpeg"
+                  alt=""
+                  class="author-pic"
+                />
+                <p class="date">01 - October - 2022</p>
+                <a href="demo-test-page.html" class="link-1-demo">
+                  <h2 class="title-news">
+                    បន្ទាប់ពីលោកស្រីនាយករដ្ឋមន្ត្រីអង់គ្លេស លីហ្ស ត្រាស់
+                    ប្រកាសលាលែងពីតំណែង ប្រធានាធិបតីអាមេរិក
+                    បានបញ្ជាក់ពីទំនាក់ទំនងដ៏រឹងមាំ
+                    និងអរគុណដល់ភាពជាដៃគូដ៏ល្អលើបញ្ហារុស្ស៊ី
+                  </h2>
+                </a>
+                <div class="views">
+                  <p class="amount-view">100 views</p>
+                  <span class="dots"></span>
+                  <p class="time-of-read">1 min read</p>
+                </div>
+                <div class="read-more">
+                  <p class="read">បន្តការអានអត្ថបទ</p>
+                  <span class="icons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 1 box content  -->
+          <div class="swiper-slide">
+            <div class="news-content">
+              <img
+                src="imgs/int-news-img/in-pic4.PNG"
+                alt=""
+                class="img-news"
+              />
+              <div class="news-detail">
+                <img src="imgs/nith.jpeg" alt="" class="author-pic" />
+                <p class="date">01 - October - 2022</p>
+                <a href="demo-test-page.html" class="link-1-demo">
+                  <h2 class="title-news">
+                    បន្ទាប់ពីលោកស្រីនាយករដ្ឋមន្ត្រីអង់គ្លេស លីហ្ស ត្រាស់
+                    ប្រកាសលាលែងពីតំណែង ប្រធានាធិបតីអាមេរិក
+                    បានបញ្ជាក់ពីទំនាក់ទំនងដ៏រឹងមាំ
+                    និងអរគុណដល់ភាពជាដៃគូដ៏ល្អលើបញ្ហារុស្ស៊ី
+                  </h2>
+                </a>
+                <div class="views">
+                  <p class="amount-view">100 views</p>
+                  <span class="dots"></span>
+                  <p class="time-of-read">1 min read</p>
+                </div>
+                <div class="read-more">
+                  <p class="read">បន្តការអានអត្ថបទ</p>
+                  <span class="icons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- -------------------  -->
+        </div>
+        <div class="swiper-pagination paginations"></div>
+        <!-- ----------------  -->
+      </div>
+      <!-- ------------------------ -->
+    </section>
+
+    <!-- ------------------  -->
+
+    <!-- testimonial  -->
+
+    <section
+      data-aos="zoom-in"
+      data-aos-duration="1200"
+      class="testimonial-section"
+    >
+      <h3 align="center" class="testimonial-header">
+        តើយើងផ្ដល់អ្វីខ្លះ សម្រាប់អ្នកទស្សនា ?
+      </h3>
+      <div class="testimonial-wrapper">
+        <!-- 1 testimonial  -->
+        <div
+          data-aos-duration="1200"
+          data-aos="fade-right"
+          class="testimonial-box"
+        >
+          <img class="testimonial-pic" src="imgs/nith.jpeg" />
+          <hr class="hr" />
+          <p class="author-quote">
+            ពួកយើង នឹងផ្ដល់ព័ត៌មានជុំវិញពិភពលោក ទៅកាន់អ្នក
+          </p>
+          <p class="name">សឿក សុផានិត</p>
+          <div class="social-testimonial">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="ionicon"
+              viewBox="0 0 512 512"
+            >
+              <title>Logo Facebook</title>
+              <path
+                d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="ionicon"
+              viewBox="0 0 512 512"
+            >
+              <title>Logo Instagram</title>
+              <path
+                d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
+              />
+              <path
+                d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="ionicon"
+              viewBox="0 0 512 512"
+            >
+              <title>Logo Twitter</title>
+              <path
+                d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- 1 testimonial  -->
+        <div
+          data-aos-duration="1200"
+          data-aos="fade-left"
+          class="testimonial-box"
+        >
+          <img class="testimonial-pic" src="imgs/authors-img/lim.jpeg" />
+          <hr class="hr" />
+          <p class="author-quote">ជាព័ត៌មាន ដែលច្បាស់លាស់នឹងគួរឲ្យជឿទុកចិត្ត</p>
+          <p class="name">ប្រុស ឈាងលីម</p>
+          <div class="social-testimonial">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="ionicon"
+              viewBox="0 0 512 512"
+            >
+              <title>Logo Facebook</title>
+              <path
+                d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="ionicon"
+              viewBox="0 0 512 512"
+            >
+              <title>Logo Instagram</title>
+              <path
+                d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
+              />
+              <path
+                d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="ionicon"
+              viewBox="0 0 512 512"
+            >
+              <title>Logo Twitter</title>
+              <path
+                d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- 1 testimonial  -->
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          class="testimonial-box"
+        >
+          <img class="testimonial-pic" src="imgs/authors-img/dom.jpeg" />
+          <hr class="hr" />
+          <p class="author-quote">
+            ព័ត៌មានថ្មីៗទាន់ហេតុការណ៍ លឿនរហ័ស និងឈានមុខគេ
+          </p>
+          <p class="name">សេ ឧត្តម</p>
+          <div class="social-testimonial">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="ionicon"
+              viewBox="0 0 512 512"
+            >
+              <title>Logo Facebook</title>
+              <path
+                d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="ionicon"
+              viewBox="0 0 512 512"
+            >
+              <title>Logo Instagram</title>
+              <path
+                d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
+              />
+              <path
+                d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="ionicon"
+              viewBox="0 0 512 512"
+            >
+              <title>Logo Twitter</title>
+              <path
+                d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section get notfication  -->
+    <div data-aos-duration="1200" data-aos="zoom-in" class="wrapper-notify">
+      <h3 class="noti-header">តើលោកអ្នកត្រូវការទទួលបានព័ត៌មានថ្មីៗមុនគេឬទេ?</h3>
+      <section id="noti" class="notification">
+        <div
+          data-aos-duration="1200"
+          data-aos="fade-right"
+          class="detail-notify"
+        >
+          <h3>
+            ទទួលបាន
+            <span>សារជូនដំណឹង </span>
+            រាល់ព័ត៌មានថ្មីៗ
+          </h3>
+          <p class="email-sign">
+            តាមរយះការចុះឈ្មោះ <span>Email</span> របស់លោកអ្នក
+          </p>
+          <input
+            class="sign-up-email"
+            type="text"
+            placeholder="example@gmail.com"
+          />
+          <button class="btn-register">ចុះឈ្មោះឥឡូវនេះ</button>
+          <a href="#email-sign-up" class="about-noti"
+            >ស្វែងយល់ព័ត៌មានបន្ថែមពីការចុះឈ្មោះ</a
+          >
+        </div>
+        <div class="wrap-noti-img">
+          <img
+            data-aos-duration="1200"
+            data-aos="fade-left"
+            src="imgs/notification-pic.jpg"
+            alt=""
+            class="notify-img"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5"
+            />
+          </svg>
+        </div>
+      </section>
+    </div>
+
+    <!-- section-download  -->
+
+    <section class="download">
+      <h3 data-aos="zoom-in">មកដល់ក្នុងពេលឆាប់ៗនេះ</h3>
+      <div class="play-and-app-store">
+        <div data-aos-duration="1200" data-aos="fade-right" class="wrap-store">
+          <a>
+            ទាញយក &nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div data-aos-duration="1200" data-aos="fade-left" class="wrap-store">
+          <a>
+            ទាញយក &nbsp;
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- section Q and A  -->
+
+    <section data-aos="zoom-in" data-aos-duration="1200" class="q-and-a">
+      <div class="q-and-a-header">FAQ</div>
+      <div class="wrap-q-and-a">
+        <div class="box-q-a box-1">
+          <div class="q-sign">សំណួរ</div>
+          <div class="q-title">តើគេហទំព័ររបស់យើង បង្កើតឡើងដើម្បីអ្វី?</div>
+          <div class="btn-show-a">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </div>
+          <div class="answer">
+            <p class="a-title">
+              គេហទំព័ររបស់យើង ត្រូវបានបង្កើតឡើង ក្នុងគោលបំណង
+            </p>
+            <ul>
+              <li>
+                ផ្សព្វផ្សាយចែករំលែករាល់ព័ត៌មានដែលមានប្រភពច្បាស់លាស់ដល់ប្រជាជនកម្ពុជា
+              </li>
+              <li>
+                ព័ត៌មាន ជាច្រើនរួមមាន ព័ត៌មានជាតិ អន្តរជាតិ បច្ចេកវិទ្យា កីឡា
+                សេដ្ធកិច្ច សុខភាព
+              </li>
+              <li>ងាយស្រួល ក្នុងការតាមដាន រាល់ព័ត៌មានថ្មីៗ</li>
+              <li>ទស្សនាបានគ្រប់ពេលវេលា និង ទីកន្លែង</li>
+            </ul>
+          </div>
+        </div>
+        <div id="email-sign-up" class="box-q-a box-2">
+          <div class="q-sign">សំណួរ</div>
+          <div class="q-title">
+            តើការចុះឈ្មោះតាមរយះ Email ដំណើរការដោយរបៀបណា?
+          </div>
+          <div class="btn-show-a">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </div>
+          <div class="answer">
+            <p class="a-title">ការចុះឈ្មោះតាមរយះ Email ដំណើរការបានដោយ</p>
+            <ul>
+              <li>លោកអ្នកគ្រាន់តែមាន Email ផ្ទាល់ខ្លួនមួយ</li>
+              <li>
+                ធ្វើការបំពេញ Email របស់លោកអ្នកនៅ <a href="#noti">ប្រអប់ខាងលើ</a>
+              </li>
+              <li>បន្ទាប់មក ចុច " ចុះឈ្មោះឥឡូវនេះ "</li>
+              <p class="a-title-2">
+                ដូច្នេះបន្ទាប់ពីបានចុះឈ្មោះរួច រាល់ព័ត៌មានថ្មីៗ នឹងធ្វើការផ្ញើរ
+                សារជូនដំណឹង ទៅកាន់លោកអ្នក
+              </p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section  -->
+    <footer>
+      <div class="my-team">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="my-team-des">
+          <h1>ក្រុមទី៦ - ព័ត៌មាន</h1>
+          <p>រាល់ព័ត៌មាន ជុំវិញពិភពលោក ស្ថិតក្នុងដៃលោកអ្នក</p>
+          <div class="social-contact">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon"
+                viewBox="0 0 512 512"
+              >
+                <title>Logo Facebook</title>
+                <path
+                  d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon"
+                viewBox="0 0 512 512"
+              >
+                <title>Logo Youtube</title>
+                <path
+                  d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149 1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5 58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5 2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9zM207 353.89v-196.5l145 98.2z"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon"
+                viewBox="0 0 512 512"
+              >
+                <title>Logo Instagram</title>
+                <path
+                  d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
+                />
+                <path
+                  d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="1000" class="about">
+        <div class="about-us">
+          <div class="us">
+            <h3>អំពីយើង</h3>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">More about Business</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="popular-news">
+          <div class="populars">
+            <div class="us">
+              <h3>ព័ត៌មានដែលពេញនិយម</h3>
+              <div class="list-popular">
+                <ul>
+                  <li>
+                    <a href="index.html#local-news-wrapper">ព័ត៌មានជាតិ</a>
+                  </li>
+                  <li>
+                    <a href="index.html#international-news">ព័ត៌មានអន្តរជាតិ</a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="more-news-categories.html#sport-news"
+                      >ព័ត៌មានកីឡា</a
+                    >
+                  </li>
+                  <li>
+                    <a href="more-news-categories.html#tech-news"
+                      >ព័ត៌មានបច្ចេកវិទ្យា</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="our-location">
+          <div class="location-us">
+            <div class="us">
+              <h3>ទំនាក់ទំនងពួកយើង</h3>
+              <div class="location">
+                <ul>
+                  <li>
+                    <a href="#"
+                      >ChambokMeas,Sangkat Bakheng,<br />
+                      Chhroy Changvar,Phnom Penh</a
+                    >
+                  </li>
+                  <li><a href="">Street 6A,Buidling A </a></li>
+                  <li><a href="#">Email : team6news@gmail.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dev">
+          <div class="members">
+            <div class="list-name">
+              <h3>បង្តើតនិងរៀបរៀងដោយ</h3>
+              <div class="wrapper-list">
+                <ul>
+                  <li><a href="#">Soeuk Sophanit</a></li>
+                  <li><a href="">Nut Sakpiseth</a></li>
+                  <li><a href="">Se Utdom</a></li>
+                </ul>
+                <ul>
+                  <li><a href="">Bros Chheanglim</a></li>
+                  <li><a href="">Sok Sopheaktra</a></li>
+                  <li><a href="#">Ket Mengly</a></li>
+                </ul>
+              </div>
+              <h4>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="warning-sign"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"
+                  />
+                </svg>
+
+                Note : This is not the real Website for any companies! It's just
+                a Project For Semester 1 Year 4. Some Components Styles are come
+                from the most popular websites in Cambodia.
+              </h4>
+              <p class="cpr">© 2022 November KH , ក្រុមទី៦</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ------ End Code -------  -->
+    <!-- JQuery CDN  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Bootstrap Javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- -------------------- -->
+    <!---------- My Javascript -------->
+    <script src="js/index.js"></script>
+    <!-- --------------------------- -->
+
+    <!-- Swiper JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- -------------  -->
+
+    <!-- AOS Script  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ------------------  -->
+
+    <!-- Initialize Swiper -->
+    <script>
+      AOS.init();
+      // more than 1 slider
+      var swiper1 = new Swiper(".mySwiper.swiper1", {
+        slidesPerView: 4,
+        spaceBetween: 32,
+        loop: true,
+        centerSlide: "true",
+        fade: "true",
+        grabCursor: false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".btn-next",
+          prevEl: ".btn-prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            allowSlideNext: true,
+            allowSlidePrev: true,
+          },
+          645: {
+            slidesPerView: 2,
+            allowSlideNext: true,
+            allowSlidePrev: true,
+          },
+          990: {
+            slidesPerView: 3,
+            allowSlideNext: false,
+            allowSlidePrev: false,
+          },
+          1280: {
+            slidesPerView: 4,
+            allowSlideNext: false,
+            allowSlidePrev: false,
+          },
+        },
+      });
+      var swiper2 = new Swiper(".mySwiper.swiper2", {
+        slidesPerView: 4,
+        spaceBetween: 32,
+        loop: true,
+        centerSlide: "true",
+        fade: "true",
+        grabCursor: false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".btn-next",
+          prevEl: ".btn-prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            allowSlideNext: true,
+            allowSlidePrev: true,
+          },
+          645: {
+            slidesPerView: 2,
+            allowSlideNext: true,
+            allowSlidePrev: true,
+          },
+          990: {
+            slidesPerView: 3,
+            allowSlideNext: false,
+            allowSlidePrev: false,
+          },
+          1280: {
+            slidesPerView: 4,
+            allowSlideNext: false,
+            allowSlidePrev: false,
+          },
+        },
+      });
+
+      var swiper3 = new Swiper(".mySwiper.swiper3", {
+        slidesPerView: 4,
+        spaceBetween: 32,
+        loop: true,
+        centerSlide: "true",
+        fade: "true",
+        grabCursor: false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".btn-next",
+          prevEl: ".btn-prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            allowSlideNext: true,
+            allowSlidePrev: true,
+          },
+          654: {
+            slidesPerView: 2,
+            allowSlideNext: true,
+            allowSlidePrev: true,
+          },
+          990: {
+            slidesPerView: 3,
+            allowSlideNext: false,
+            allowSlidePrev: false,
+          },
+          1280: {
+            slidesPerView: 4,
+            allowSlideNext: false,
+            allowSlidePrev: false,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
